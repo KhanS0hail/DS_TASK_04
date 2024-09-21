@@ -1,7 +1,6 @@
 # Prodigy InfoTech Data Science Internship Task 4
 
 Analyze and visualize sentiment patterns in social media data to understand public opinion and attitudes towards specific topics or brands.
-- The dataset used for this task was obtained from Twitter and analyzed using natural language processing techniques.
 
 ### Task Completed
 
