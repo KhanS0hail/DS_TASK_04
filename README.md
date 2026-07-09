@@ -5,8 +5,6 @@ An exploratory natural language processing (NLP) and data analysis project to id
 ## 📌 Project Overview
 Social media is a major driver of public brand perception. This project processes Twitter feed records to analyze user sentiment patterns (positive, negative, neutral, irrelevant) targeted at major brands (e.g., Google, Microsoft) and entertainment franchises (e.g., Rainbow Six). By classifying and visualising sentiments, it provides an analytical look at public attitudes and brand engagement.
 
-![Social Media Sentiment Analysis and Brand Perceptions](./task-04.png)
-
 ## 🚀 Key Features
 * **Multi-Class Sentiment Profiling:** Analyzes user posts across four core categories: Positive, Negative, Neutral, and Irrelevant.
 * **Entity-Level Dissection:** Tracks and ranks entities by discussion volume and maps sentiment splits specific to each entity.
@@ -37,10 +35,9 @@ Social media is a major driver of public brand perception. This project processe
 
 ## 📂 Project Structure
 ```text
-├── Task_04.ipynb         # Sentiment analysis, plotting, and text EDA notebook
-├── twitter_training.csv  # Labeled social media training corpus
-├── task-04.png           # Saved sentiment breakdown and heatmap plots
-└── README.md             # Project documentation
+├── twitter_brand_sentiment_analyzer.ipynb # Sentiment analysis, plotting, and text EDA notebook
+├── twitter_training.csv                   # Labeled social media training corpus
+└── README.md                              # Project documentation
 ```
 
 ## 👤 Author
