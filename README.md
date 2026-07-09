@@ -1,52 +1,49 @@
-# Prodigy InfoTech Data Science Internship Task 4
+# Brand & Entity Sentiment Tracker on Social Media
 
-Analyze and visualize sentiment patterns in social media data to understand public opinion and attitudes towards specific topics or brands.
+An exploratory natural language processing (NLP) and data analysis project to identify, visualize, and track sentiment patterns towards major entities, brands, and games on Twitter.
 
-### Task Completed
+## 📌 Project Overview
+Social media is a major driver of public brand perception. This project processes Twitter feed records to analyze user sentiment patterns (positive, negative, neutral, irrelevant) targeted at major brands (e.g., Google, Microsoft) and entertainment franchises (e.g., Rainbow Six). By classifying and visualising sentiments, it provides an analytical look at public attitudes and brand engagement.
 
-This submission fulfills the requirements of Task 4, which was to perform sentiment analysis on social media data (Twitter) and identify sentiment patterns related to different topics or brands.
+![Social Media Sentiment Analysis and Brand Perceptions](./task-04.png)
 
-### Methodology:
+## 🚀 Key Features
+* **Multi-Class Sentiment Profiling:** Analyzes user posts across four core categories: Positive, Negative, Neutral, and Irrelevant.
+* **Entity-Level Dissection:** Tracks and ranks entities by discussion volume and maps sentiment splits specific to each entity.
+* **Correlative Heatmaps:** Utilizes matrices to expose positive/negative sentiment biases towards different brands.
+* **Custom NLP Visualizations:** Implements pie charts, topic-specific count plots, and frequency charts to summarize social dialogue.
 
-- **Data Acquisition:** Collected Twitter data from [Kaggle](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis) for analysis.
-- **Data Cleaning:**  Prepared the data by handling missing values and ensuring data integrity..
-- **Topic Analysis:** Identified key topics discussed in the tweets and there sentiments.
-- **Data Visualization:** Visualized the results of the sentiment analysis to highlight public sentiment across various topics.
+## 🛠️ Tech Stack & Libraries
+* **Language:** Python
+* **Data Processing & Analytics:** Pandas, NumPy
+* **Data Visualization:** Matplotlib, Seaborn, WordCloud
 
-### Visualizations:
+## 📈 Methodology & Pipeline
+1. **Data Acquisition:** Acquired a corpus of labeled entity-directed tweets from the [Kaggle Twitter Entity Sentiment Analysis Dataset](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis).
+2. **Data Cleaning & Text Validation:**
+   * Handled empty text fields and invalid data rows.
+   * Standardized text inputs and structured entity tags.
+3. **Exploratory Data Analysis (EDA):**
+   * Computed global sentiment distribution ratios.
+   * Grouped sentiments by brand entity to compare public sentiment trends.
+4. **Data Visualization:**
+   * Plotted global sentiment breakdowns as a pie chart.
+   * Rendered topic-wise counts and topic-sentiment heatmaps for comparative analysis.
 
-- **Count of Different Topics:** Visualized the count of various topics discussed in the dataset to understand which topics are most frequently mentioned.
+## 💡 Key Insights
+* **High-Volume Entities:** Gaming entities (e.g., "TomClancyRainbowSix") generated the highest volume of social dialogue and showed highly polarized positive and negative distributions.
+* **Corporate Brand Profiles:** Institutional tech entities like "Google" and "Microsoft" had predominantly neutral sentiments, indicating a dominance of objective news sharing and professional discussions.
+* **Global Sentiment Balance:** While negative sentiment represented a notable share (~30.3%), positive and neutral components maintained a balanced division, showing diverse consumer opinions.
 
-- **Sentiment Distribution Overview:** Created a pie chart to illustrate the distribution of sentiments across all tweets, categorizing them as positive, negative, neutral, and irrelevant.
+## 📂 Project Structure
+```text
+├── Task_04.ipynb         # Sentiment analysis, plotting, and text EDA notebook
+├── twitter_training.csv  # Labeled social media training corpus
+├── task-04.png           # Saved sentiment breakdown and heatmap plots
+└── README.md             # Project documentation
+```
 
-- **Sentiment Distribution Topic-wise:** Analyzed sentiment distribution for each topic to provide a clearer picture of public sentiment across different discussions.
-
-- **Top 5 Topics with Sentiment Breakdown:** Presented the top 5 topics along with their respective sentiment classifications (positive, negative, neutral, and irrelevant) to highlight how each topic is perceived in public discourse.
-
-- **Heatmap of Topic vs. Sentiment:** Created a heatmap to visualize the relationship between different topics and their associated sentiment categories, allowing for a quick assessment of sentiment trends across topics.
-
-### Key Findings from Twitter Sentiment Analysis:
-
-1. **Most Discussed Topic:** "TomClancyRainbowSix" was the most frequently discussed topic among the analyzed tweets.
-  
-2. **Sentiment Overview:** Negative sentiment was prevalent, accounting for 30.3% of overall sentiment. However, positive and neutral sentiments were also significant, indicating a balanced discussion across multiple topics.
-
-3. **Topic-Specific Sentiments:** Topics like "Google" and "Microsoft" were predominantly discussed neutrally, suggesting objective conversations around these brands.
-
-### Tools and Libraries:
-
-- Python
-- Pandas
-- Matplotlib
-- Seaborn
-- WordCloud
-
-### Dataset Source:
-
-- The dataset used for this analysis can be found at: [Kaggle - Twitter Data](https://www.kaggle.com/datasets/jp797498e/twitter-entity-sentiment-analysis)
-
-### Contact
-
-- [Khan Sohail (LinkedIn)](https://www.linkedin.com/in/khan-sohail-386b2027a)
-- Gmail: ks646397@gmail.com
-
+## 👤 Author
+* **Khan Sohail**
+  * [LinkedIn](https://www.linkedin.com/in/khan-sohail-386b2027a)
+  * Email: ks646397@gmail.com
